@@ -1,0 +1,32 @@
+
+
+Primer avance
+-Validaciones en javascript
+-Landing Page <---Investigar
+-Buscador
+-Pagina Detalle	<---investigar
+-Carrito de compras 
+-Confirmacion
+-Registro de usuario
+-Login
+-Edicion de perfil
+-Solicitudes de presupuesto  <---investigar
+-Chat con administrador
+-Reportes (Compra y Venta)
+-Creacion de producto(modificacion)
+-Usuario
+
+Organizar Paginas
+-Pagina para ingresar con el usuario
+	-Registro usuario
+	*Login
+		-Perfil_Usuario
+			*Edicion de perfil
+			*Chat con administrador
+			*Reportes de compra y venta.
+			-Creacion y Modificacion del producto
+		-Pagina principal de ventas
+			-Buscador
+				-Articulo
+					-Carrito de Compras
+						*Confirmacion de compras

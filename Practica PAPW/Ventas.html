@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  	<script type="text/javascript" src="bootstrap.js"> </script>
+	  	<link rel="stylesheet" href="css/bootstrap.css"> 
+                  <link rel="stylesheet" href="css/Datos_Colores.css">
+
+	<title></title>
+</head>
+
+<body >
+
+<div class="containers">
+
+  <a href= "Perfil.html"> <input type= "submit" value="Mi perfil" /> </a> 
+  <a href= "Pagina_Principal.html"> <input type= "submit" value="Pagin principal" /> </a>
+   
+
+		<div class="fb-profile">
+            <h1>
+			
+
+			
+			<div class="fb-profile">
+			 <img align="left" class="fb-image-lg" src = "data:image/jpg;base64,<?php echo base64_encode($row['portada']);?>" alt="Profile image example" width="200" height="200"/>
+        <img align="left" class="fb-image-profile thumbnail" src= "data:image/jpg;base64,<?php echo base64_encode($row['imagen_usuario']);?>" alt="Profile image example"/>
+       </div>
+			</h1>
+			<!-- <p>:<?php echo $row['clave_usuario'];?><p> -->
+			
+			
+			<p> <p>
+			
+			<!-- <p><?php echo $row['estado'];?><p> -->
+			
+        </div>
+
+<a href ="carrito.html" ><input type="submit" value="Ir al carrito"/></a>
+
+</div> <!-- /container -->  
+<div class="containers">
+	  <h2>Datos de vendedor</h2>
+
+  <p></p><div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Visitas</th>
+				<th> Valoracion </th>
+		<th> Nombre del articulo: </th>
+		<th> Coste del producto: </th>
+		
+		<th> Cantidad: </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="well"></td>
+        <td class="well"></td>
+        <td alt="Cinque Terre" class="well"></td>		
+				<td class="well"></td>
+				<td class="well"></td>
+		<td class="well"></td>
+       
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  
+ 
+
+<form method= "POST" Action="<?php $_SERVER['PHP_SELF'] ?>">
+<input type="hidden"class="form-control"  name="1" value= "<?php echo $row['Nombre_articulo'];?>" >
+<input type="hidden"class="form-control"  name="2" value="<?php echo $row['num_art'];?>" >
+<input type="hidden"class="form-control"  name="3" value="<?php echo $row['precio'];?>" >
+<input type="hidden"class="form-control"  name="4" value="<?php echo $row['id_articulo'];?>" >
+<input type="hidden"class="form-control"  name="5" value="<?php echo $sfecha_hora_actual?>" >
+<input type="hidden"class="form-control"  name="6" value="<?php echo $_SESSION['Id_usuario'];?>" >
+
+<input type="submit" name="Comprar" value="Comprar"/>
+</form>
+
+ <form method= "POST" Action="<?php $_SERVER['PHP_SELF'] ?>" >
+<input type="text" class="form-control"  name="vak" placeholder="Ingrese valoracion" >
+ <input type="submit" value="valorar" name ="vals"/>
+ </form>
+</div>
+
+
+
+<br>
+
+<div class="containers">
+
+   <div class="row">
+  <div class="col-md-4">
+     <div class="thumbnail">
+   </div>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  
+ <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src= "data:image/jpg;base64,<?php echo base64_encode($row['imagen1']);?>"
+    class="img-circle" width="800" height="500"  alt="Cinque Terre"> 
+
+      <div class="carousel-caption">
+        </div>
+    </div>
+
+    <div class="item">
+ <img src= "data:image/jpg;base64,<?php echo base64_encode($row['imagen1']);?>"
+    class="img-circle" width="800" height="500"  alt="Cinque Terre"> 
+      <div class="carousel-caption">
+         </div>
+    </div>
+
+    <div class="item">
+ <img src= "data:image/jpg;base64,<?php echo base64_encode($row['imagen1']);?>"
+    class="img-circle" width="800" height="500"  alt="Cinque Terre"> 
+      <div class="carousel-caption">
+         </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>  
+</div>
+
+   </div>
+  
+ </div>
+
+
+  <h2>Venta</a></h2>
+
+
+  <div class="containers" >
+
+    <video src='".$este."' controls width='320px' height='200px' >
+     </div>
+  <p></p><div class="table-responsive">          
+  <table class="table">
+
+			
+    <thead>
+      <tr>
+	    <th> </th>
+        <th>Nombre:</th>
+        <th>Comentario:</th>
+        <th>Fecha</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+		<td><img align="left" class="fb-image-lg" src = "data:image/jpg;base64,<?php echo base64_encode($row['imagen_usuario']);?>" alt="Profile image example" width="200" height="200"/>
+ </td>
+        <td class="well"></td>
+        <td class="well"></td>
+        <td class="well"></td>
+        
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <textarea class="form-control" placeholder="Comente aqui" name="comentario" > </textarea>
+ <input type="submit" value="Comentar" name ="Comentar"/>
+</div>
+
+
+
+	
+	
+	
+	
+</body>
+<footer>
+
+
+</footer>
+<br>
+</html>
+

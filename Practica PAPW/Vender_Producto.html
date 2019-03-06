@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<a href= "Perfil.html"> <input type= "submit" value="Regresar" /> </a> 
+  	<script type="text/javascript" src="bootstrap.js"> </script>
+	  	<link rel="stylesheet" href="css/bootstrap.css">
+	<title></title>
+</head>
+<div class="well">
+<a href="Tu pagina.php" ><-- </a>
+<div class="container">
+    <div class="fb-profile">
+
+		<div class="fb-profile">
+            <h1>
+			
+			<div class="fb-profile">
+			 <img align="left" class="fb-image-lg" src = "data:image/jpg;base64,<?php echo base64_encode($row['portada']);?>" alt="Profile image example" width="200" height="200"/>
+        <img align="left" class="fb-image-profile thumbnail" src= "data:image/jpg;base64,<?php echo base64_encode($row['imagen_usuario']);?>" alt="Profile image example"/>
+       </div>
+			
+<!-- echo $row['Id_usuario'];-->
+			<h1>Bievenido:<h1>
+			
+			<!-- <p>:<?php echo $row['clave_usuario'];?><p> -->
+			
+			
+			<p> <p>
+			
+			<!-- <p><?php echo $row['estado'];?><p> -->
+			
+        </div>
+   
+</div> <!-- /container -->  
+ <label for="Nombre">Ingrese los datos de registro:</label> 
+
+<br>
+
+<form method= "post" Action="<?php $_SERVER['PHP_SELF'] ?>" enctype = "multipart/form-data"  >
+Nombre del Articulo:
+<input type="text" class="form-control" name="nombre_articulo" autofocus placeholder="Ingrese el nombre del articulo" required id="nombre">
+<br>
+Precio:
+<input type="text" class="form-control" name="precio" autofocus placeholder="Ingrese el precio" required id="apellidop">
+<br>
+Descripcion:
+<input type="text"class="form-control"  name="descripcion" autofocus placeholder="Ingrese la descripcion" required>
+<br>
+<br>
+Primera imagen:
+<input type= "file" name = "imagen1"  class="form-control"required>
+<br>
+<br>
+Segunda imagen:
+<input type= "file" name = "imagen2"  class="form-control"required>
+<br>
+<br>
+Tercera imagen:
+<input type= "file" name = "imagen3"  class="form-control"required>
+<br>
+<br>
+video:
+<input type= "file" name ="video"  class="form-control"required>
+<br>
+categoria :
+<br>
+Cantidad:
+<input type= "text" class="form-control"   name="num_art" placeholder="Cantidad de articulos" required>
+<br>
+<br>
+Desea agregar una oferta(opcional):
+<input type= "text" class="form-control"   name="oferta" placeholder="Ingrese oferta" >
+<br>
+</div>
+<!-- Estado -->
+<br>
+<br>
+<input type= "submit" name="enviar" value= "enviar"  > 
+
+<input  type = "reset" value="Cancelar">
+</form>
+
+<body>
+
+</body>
+</html>

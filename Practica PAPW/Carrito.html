@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  	<script type="text/javascript" src="bootstrap.js"> </script>
+	  	<link rel="stylesheet" href="css/bootstrap.css"> 
+	  		  	<link rel="stylesheet" href="css/Datos_Colores.css">
+	<a href= "Ventas.html"> <input type= "submit" value="Regresar al producto" /> </a> 
+
+<a href= "Perfil.html"> <input type= "submit" value="Ir  a mi perfil" /> </a> 
+	<title></title>
+
+
+</head>
+<body>
+	<div class="containers">
+    <div class="fb-profile">
+
+		<div class="fb-profile">
+            <h1>
+		
+			
+			<div class="fb-profile">
+			 <img align="left" class="fb-image-lg" src = "data:image/jpg;base64,<?php echo base64_encode($row['portada']);?>" alt="Profile image example" width="200" height="200"/>
+        <img align="left" class="fb-image-profile thumbnail" src= "data:image/jpg;base64,<?php echo base64_encode($row['imagen_usuario']);?>" alt="Profile image example"/>
+       </div>
+			</h1>
+
+<!-- echo $row['Id_usuario'];-->
+			<h1>Bievenido:<h1>
+			
+			<!-- <p>:<?php echo $row['clave_usuario'];?><p> -->
+			
+			
+			<p> <p>
+			
+			
+        </div>
+   
+</div> <!-- /container -->  
+
+
+		
+		 <form method= "post" Action="<?php $_SERVER['PHP_SELF'] ?>" enctype = "multipart/form-data"  >
+ <input type= "submit" name="Cerrar" value= "Cerrar Sesion"  />
+ 
+
+ </form>
+ 
+ 
+<div class="containers">
+
+<a href= "Tu Pagina.php"> <input type= "submit" value= "Perfil"/>  </a>
+<h2>Detalles de la Compra</h2>
+  <p></p><div class="table-responsive">    
+  <table class="table">
+    <thead>
+      <tr>
+        
+		<th> Nombre del articulo: </th>
+		<th> Precio: </th>
+		<th> Fecha</th>
+				<th> Cantidad de unidades: </th>
+		<th> Comprar </th>
+		<th> Eliminar Articulo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+
+        <td class="well"></td>
+				
+				<td class="well">
+					
+				</td>
+		<td class="well">
+			
+
+		</td>
+		<form method= "POST" Action="<?php $_SERVER['PHP_SELF'] ?>">
+		 <td><input type="text" placeholder="Cantidad de articulos" value="" name = "cantidad" /> </td>
+
+       <td >
+
+<input type="HIDDEN"class="form-control"  name="1" value= "<?php echo $row['nom_art'];?>" >
+
+<input type="HIDDEN"class="form-control"  name="3" value="<?php echo $row['precio'];?>" >
+<input type="HIDDEN"class="form-control"  name="5" value="<?php echo $sfecha_hora_actual?>" >
+<input type="HIDDEN"class="form-control"  name="6" value="<?php echo $idUsuarios;?>" >
+
+<input type="submit" name="Confirmar" value="Confirmar"/>
+</td>
+
+</form>
+
+
+<td>
+
+ <input type="text" placeholder="Cantidad de articulos" value="" name = "cantidad" />
+ <input type="submit" value="Comprar" name ="Comprar"/>
+ 
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  </div>
+</div>
+<br> 
+
+	</div>
+	
+	<div>
+	<aside>
+	
+		</body>
+
+ 
+		
+<footer>
+
+</footer>
+<br>
+
+</body>
+</html>

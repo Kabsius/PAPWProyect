@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/Datos_Colores.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	  	<link rel="stylesheet" href="css/bootstrap.css">
+	
+</head>
+<body>
+
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+<div class="container">
+  <div class="row">
+
+   		 <nav class="col-sm-3" id="myScrollspy">
+<ul  class="nav nav-pills nav-stacked">
+        <li > <a href="#section1">Categoria1</a></li>
+        <li > ><a href="#section2">Categoria2</a></li>
+        <li > ><a href="#section3">Categoria3</a></li>
+</ul>
+		</nav>
+
+   </div>
+
+   <div>
+
+Buscar:
+<input type="text" name="Matricula" autofocus placeholder="Ingrese nombre del producto" required>
+<br>
+			<a href= "Perfil.html"> <input type= "submit" value="Buscar" /> </a> 
+<br>
+	</div>			
+
+   </div>
+
+	
+
+</div>
+
+		
+
+<!-- Page Content -->
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+  <div class="w3-container">
+    <h1>SOLO HTML</h1>
+
+
+	<a href= "Ventas.html"> <input type= "submit" value="Ventas" /> </a> 
+		<a href= "Iniciar.html"> <input type= "submit" value="Iniciar" /> </a> 
+				<a href= "Perfil.html"> <input type= "submit" value="Perfil" /> </a> 
+
+  </div>
+</div>
+
+
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"  > </li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+ <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+
+    <div class="item active">
+      <a href= "venta.html"> <img src="css/img/1.jpg" class="img-circle"  alt="Cinque Terre"> </a>
+
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>LA is always so much fun!</p>
+      </div>
+    </div>
+
+    <div class="item">
+<a href= "venta.html"> <img src="css/img/1.jpg" class="img-circle"  alt="Cinque Terre"> </a>
+
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>
+    </div>
+
+    <div class="item">
+<a href= "venta.html"> <img src="css/img/1.jpg" class="img-circle"  alt="Cinque Terre"> </a>
+
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>
+    </div>
+  
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+</div>
+
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+     
+
+</body>
+</div>
+
+
+</html>
